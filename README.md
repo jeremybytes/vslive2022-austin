@@ -17,6 +17,8 @@ Resources:
 * Slides: [TH04.../SLIDES-delegates-in-csharp.pdf](./TH04-delegates-in-csharp/SLIDES-delegates-in-csharp.pdf)
 * Sample Code: [TH04-delegates-in-csharp/](./TH04-delegates-in-csharp/)  
 
+***
+
 **TH11 - I'll Get Back to You: Task, Await, and Asynchronous Methods in C#**  
 There's a lot of confusion about async/await, Task/TPL, and asynchronous and parallel programming in general. So let's start with the basics and look at how we can call asynchronous methods using Task and then see how the "await" operator can makes things easier for us. Along the way, we'll look at continuations, ConfigureAwait, and exception handling.
 
@@ -27,7 +29,9 @@ You will learn:
 
 Resources:  
 * Slides: [TH11.../SLIDES-task-await-and-async-methods-in-csharp.pdf](./TH11-task-await-and-async-methods-in-csharp/SLIDES-task-await-and-async-methods-in-csharp.pdf)
-* Sample Code: [TH11-task-await-and-async-methods-in-csharp/](./TH11-task-await-and-async-methods-in-csharp/)
+* Sample Code: [TH11-task-await-and-async-methods-in-csharp/](./TH11-task-await-and-async-methods-in-csharp/)  
+
+***
 
 **TH17 - Better Parallel Code with C# Channels**  
 Producer/consumer problems show up in a lot of programming scenarios, including data processing and machine learning. Channels give us a thread-safe way to communicate between producers and consumers, and we can run them all concurrently. In this presentation, we will explore channels by comparing parallel tasks with continuations to using a producer/consumer model. In the end, we'll have another tool in our toolbox to help us with concurrent programming.
