@@ -30,9 +30,9 @@ public partial class MainWindow : Window
         return null;
     }
 
-    private Action<List<Person>>? AssignAction()
+    private Action<List<Person>> AssignAction()
     {
-        Action<List<Person>>? action = null;
+        Action<List<Person>> action = (p) => { };
 
         if (BestCommanderCheckBox.IsChecked!.Value)
             action += p => MessageBox.Show(
@@ -73,7 +73,7 @@ public partial class MainWindow : Window
         {
             // DO NOT DO THIS
             // unless you hate your co-workers
-            AssignAction()?.Invoke(people);
+            AssignAction()(people);
         }
     }
 
