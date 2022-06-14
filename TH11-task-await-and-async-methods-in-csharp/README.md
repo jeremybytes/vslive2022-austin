@@ -8,6 +8,33 @@ You will learn:
 * How to handle exceptions that occur in an asynchronous method  
 * When to use "ConfigureAwait"    
 
+## Project Layout
+To build and run the code, you will need to have .NET 6 installed on your machine. The demo project is a Windows desktop project, so it will only run on Windows.
+
+**/completed/UsingTask.UI** contains a desktop application that uses asynchronous methods  
+**/completed/UsingTask.Library** contains library code with asynchronous methods (called by the UI). The library calls the people service (below).  
+**/completed/UsingTask.Shared** contains data objects used by both the library and the service.  
+**/completed/People.Service** contains the people service (used by the library)  
+
+## Development Environments
+**Visual Studio 2022**  
+The "UsingTask.sln" contains all of the projects listed above. You can either set the solution to start both the UI and Service projects (using the Solution Properties window), or you can start the service manually (see "Running the Service") and have the "UsingTask.UI" as the Startup project.
+
+**Visual Studio Code**  
+In Visual Studio Code, you will want to start the service separately from the command line (see "Running the Service"). You can leave the service running while working with the desktop application.
+
+## Running the Service
+The **.NET service** can be started from the command line by navigating to the ".../completed/People.Service" directory and typing `dotnet run`. This provides endpoints at the following locations:
+
+* http://localhost:9874/people  
+Provides a list of "Person" objects. This service will delay for 3 seconds before responding. Sample result:
+
+```json
+[{"id":1,"givenName":"John","familyName":"Koenig","startDate":"1975-10-17T00:00:00-07:00","rating":6,"formatString":null},  
+{"id":2,"givenName":"Dylan","familyName":"Hunt","startDate":"2000-10-02T00:00:00-07:00","rating":8,"formatString":null}, 
+{...}]
+```
+
 ## Resources
 **Articles**  
 * [Task and Await: Consuming Awaitable Methods](http://jeremybytes.blogspot.com/2014/12/task-and-await-consuming-awaitable.html)  

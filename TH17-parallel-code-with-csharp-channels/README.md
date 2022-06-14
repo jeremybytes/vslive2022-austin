@@ -11,7 +11,7 @@ You will learn:
 ## Project Layout
 To build and run the code, you will need to have .NET 6 installed on your machine. The demo project will run wherever .NET 6 will run (Windows, macOS, Linux).
 
-**/completed/PeopleViewer** contains a console application that uses channels program  
+**/completed/PeopleViewer** contains a console application that uses people service (below).  
 **/completed/People.Service** contains a service (used by the console application)  
 
 The "PeopleViewer" program is a console application that calls the service and displays the output. In order to show concurrency, the application gets each record individually.

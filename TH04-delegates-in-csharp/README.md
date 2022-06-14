@@ -8,6 +8,23 @@ You will learn:
 * How to use functions as parameters and return values  
 * Make code that can be easily extended  
 
+## Project Layout
+To build and run the code, you will need to have .NET 6 installed on your machine. The demo project is a Windows desktop project, so it will only run on Windows.
+
+**/completed/delegates** contains a desktop application that demonstrates how to use delegates  
+
+### Files
+**MainWindow.xaml.cs** contains the UI code. This is where we use delegates in various ways.  
+**Person.cs** contains the "Person" class where we add a "ToString()" method that take a delegate as a parameter.  
+**Snippets.cs"** contains some "completed" code that is pasted into the project (so you do not need to watch me type everything).  
+
+## Development Environments
+**Visual Studio 2022**  
+The "func-action-delegates.sln" contains the project listed above.
+
+**Visual Studio Code**  
+In Visual Studio Code, you can open the folder that has the "delegates.csproj" file.
+
 ## Resources
 
 **Articles:**  
